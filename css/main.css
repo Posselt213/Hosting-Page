@@ -1,0 +1,89 @@
+/*Cascading Style sheets & Specificity
+
+Cascading: Multiple Rules can apply to the same Element
+
+
+Specificity: Resolve Conflicts arising from multiple rules
+*Inline Styles
+*#ID selectors
+*.class, :pseudo-class and attribute selectors
+*
+
+Whenever we have a IDs, class selector they have prioritanze 
+rather than any other element
+
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{/*Element h1*/
+    color: rgb(184, 175, 54);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+/* COMBINATORS where you use an element and a specificity
+Adjacent Sibling  div + p{}
+General Sibling div ~ p {}
+Child div > p {}
+Descendant div p {}
+*/
+
+#header h1{/*descendant combinator(h1) */
+    color: white;
+    font-family: 'Anton';
+ 
+} 
+
+section{ /*Element selectors*/
+background: red;
+}
+
+#header{ /*IDs style(section tag)*/
+    background: blue;
+
+}
+
+#subtitles{/*IDs Set Style(section tag)*/
+
+    background: rgb(245, 245, 245);
+}
+
+.section-title{  /*Classes Style(h1 tag)*/
+    color: greenyellow;
+    font-family: inherit;/* inherit is a keyword that allows you to inherit the 
+    font from the selector in this case h1 */
+ 
+}
+/*      Selectors
+-div
+-.section-title(class type)
+-#header(id type)
+-[disabled]
+-[type="text"]
+-* (Universal selector)
+*/
+/*      Properties
+-background-color
+-color
+-width
+-margin
+-display
+*/
+/*      Values
+-red
+-30%
+-#fa923f
+-rgb(250, 250, 250)
+-10px
+-block
+*/
+
+
+
+
+/**/
+
+
