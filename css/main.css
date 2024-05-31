@@ -14,24 +14,38 @@ rather than any other element
 
 */
 
+* {
+
+    box-sizing: border-box;
+}
+
 body{ /* Element*/
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    
 }
 
 #product-overview{ /*Id selector(section tag)*/
-    background: blue;
+    background: rgb(255, 0, 0);
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 5px;
+    
+    
 
 }
 
 .section-title{  /*Classes Style(h1 tag)*/
     color: greenyellow;
-    font-family: inherit;/* inherit is a keyword that allows you to inherit the 
-    font from the selector in this case h1 */
- 
+   
 }
 
+
+
 #plans{ /*Id selector(section tag)*/
-    background: red;
+
     }
 
 
@@ -85,8 +99,22 @@ Examples.....
 */
 
 
-/*h1{/*Element h1*/
- /*   color: rgb(184, 175, 54);
+/* Shorthand Properties
+
+------Separate properties-------
+border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin: 20px;
+
+------Shorthand properties------
+border: 5px solid black;
+margin: 5px(top) 10px(right) 5px(bottom) 10px(left);
+
+*/
+
+/*h1{
+   color: rgb(184, 175, 54);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }*/
 
