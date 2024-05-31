@@ -25,15 +25,11 @@ body{ /* Element*/
 }
 
 #product-overview{ /*Id selector(section tag)*/
-    background: rgb(255, 0, 0);
-    width: 50%;
-    height: 400px;
+    background: url("ragnarok.jpg");
+    width: 100%;
+    height: 528px;
     padding: 10px;
-    border: 5px solid black;
-    margin: 5px;
-    
-    
-
+   
 }
 
 .section-title{  /*Classes Style(h1 tag)*/
@@ -41,11 +37,73 @@ body{ /* Element*/
    
 }
 
+.main-header{
+    width: 100%;
+    background: rgb(43, 226, 101);
+    padding: 8px 16px;
+}
+
+.main-header > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 
 
-#plans{ /*Id selector(section tag)*/
+}
 
-    }
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+    
+}
+
+.main-nav__item{
+    margin: 0 16px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.main-nav__item a{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active{
+    color: white;
+    border-bottom: 5px solid white;
+    display: inline-block;
+
+}
+
+.main-nav__item--cta a{
+color: white;
+background: red;
+padding: 8px 16px;
+border-radius: 8px;
+display: inline-block;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active{
+    color: rgb(255, 0, 0);
+    background: white;
+    border: none;
+    display: inline-block;
+
+}
+
 
 
 
@@ -79,6 +137,17 @@ Descendant div p {}
 -width
 -margin
 -display
+
+Worth to remember-----
+Color:
+background-color:
+display:
+padding:
+border:
+margin:
+width:
+height:
+
 */
 /*      Values
 Values are tightly coupled to specific property!
@@ -96,8 +165,6 @@ Examples.....
 -transform scale
 
 */
-
-
 /* Shorthand Properties
 
 ------Separate properties-------
@@ -111,11 +178,11 @@ border: 5px solid black;
 margin: 5px(top) 10px(right) 5px(bottom) 10px(left);
 
 */
-
-/*h1{
-   color: rgb(184, 175, 54);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}*/
+/*Pseudo Clases & Pseudo Elements
+        -class  :hover
+pseudo-
+        -element
+*/
 
 /**/
 
