@@ -7,7 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>Learning Path</title>
+        <title>Hosting Site</title>
+        <link rel="stylesheet" href="css/shared.css" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
                     <!--
@@ -23,23 +24,26 @@
                 </a>
             </div>
             <nav class="main-nav">
-                <ul >
-                    <li class="main-nav__item"><a href="packages/index.html"  >Packages</a></li>
-                
-                    <li class="main-nav__item"><a href="customes/index.html" >Customers</a></li>
-               
-                    <li class="main-nav__item main-nav__item--cta"><a href="start-hosting/index.html">Start Hosting</a></li>
+                <ul class="main-nav__items">
+                    <li class="main-nav__item">
+                        <a href="packages/index.html"  >Packages</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="customers/index.html" >Customers</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--cta">
+                        <a href="start-hosting/index.html">Start Hosting</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-
         <main>
             <section id="product-overview"> <!--IDs Set Style to one specific element-->
-                <h1>Ragnarok Online Hosting </h1> <!--Elements-->
+                <h1>Hosting Online</h1> <!--Elements-->
             </section>
             <section id="plans">  <!--IDs Set Style to one specific element-->
                 <h1 class="section-title">Choose your plan</h1> <!-- Classes-->
-                <div>
+                <div class="plan__list">
                     <article class="plan">
                         <h1 class="plan__title" >FREE</h1>
                         <h2 class="plan__price">$0/month</h2>

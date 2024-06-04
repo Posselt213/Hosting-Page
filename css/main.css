@@ -1,39 +1,14 @@
-/*Cascading Style sheets & Specificity
-
-Cascading: Multiple Rules can apply to the same Element
 
 
-Specificity: Resolve Conflicts arising from multiple rules
-*Inline Styles
-*#ID selectors
-*.class, :pseudo-class and attribute selectors
-*
-
-Whenever we have a IDs, class selector they have prioritanze 
-rather than any other element
-
-*/
-
-* {
-    box-sizing: border-box;/*Universal */
-}
-
-body{ /* Element*/
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    
-}
-
-#product-overview{ /*Id selector(section tag)*/
+#product-overview{
     background: url("ragnarok.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;
-   
 }
 
 .section-title{  /*Classes Style(h1 tag)*/
-    color: rgb(100, 164, 4);
+    color: #2ddf5c;
     text-align: center;
    
 }
@@ -43,8 +18,15 @@ body{ /* Element*/
     font-family: 'Anton', sans-serif;
 }
 
+.plan__list{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+
 .plan{
-    background-color: #d5ffdc;
+    background: #d5ffdc;
     text-align: center;
     padding: 16px;
     margin: 8px;
@@ -63,15 +45,14 @@ body{ /* Element*/
 .plan__annotation{
     background: white;
     color: #19b84c;
-    padding: 7px;
+    padding: 8px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 8px;
    
 }
 
 .plan__title{
     color: #0e4f1f;
-    font-weight: bold;
 }
 
 .plan__price{
@@ -96,31 +77,10 @@ body{ /* Element*/
     margin: 8px 0;
 }
 
-.button{
-    background: #023710;
-    color: white;
-    border-radius: 5px;
-    font: inherit;
-    padding: 6px;
-    cursor: pointer;
-    border: 1px solid #023710;
-}
-
-.button:hover,
-.button:active{
-background: white;
-color: #023710;
-font-style: bold;
-}
-
-.button:focus{
-    outline: none;
-}
-
 #key--features{
-    background: rgb(229, 97, 97);
+    background: #ff1b68;
     margin-top: 80px;
-    padding: 60px;
+    padding: 16px;
 }
 
     
@@ -129,7 +89,7 @@ font-style: bold;
     margin: 32px;
 }
 
-.key-feature__list{
+.key--features__list{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -156,107 +116,8 @@ font-style: bold;
     text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 19px;
-
-}
-
-
-
-.main-header{
-    width: 100%;
-    background: rgb(43, 226, 101);
-    padding: 8px 16px;
-}
-
-.main-header > div{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-header__brand{
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
     font-size: 20px;
 
-
-}
-
-.main-nav{
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-    vertical-align: middle;
-    
-}
-
-.main-nav__item{
-    margin: 0 16px;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-}
-
-.main-nav__item a{
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 3px;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active{
-    color: white;
-    border-bottom: 5px solid white;
-    display: inline-block;
-
-}
-
-.main-nav__item--cta a{
-color: white;
-background: red;
-padding: 8px 16px;
-border-radius: 8px;
-display: inline-block;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active{
-    color: rgb(255, 0, 0);
-    background: white;
-    border: none;
-    display: inline-block;
-
-}
-
-.main-footer{
-    background-color: black;
-    color: white;
-    padding: 42px;
-    margin-top: 48px;
-}
-
-.main-footer__links{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
-}
-
-.main-footer__link{
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-footer__link a{
-    color: white;
-    text-decoration: none;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active{
-    color: #ccc;
 }
 
 
@@ -267,8 +128,21 @@ display: inline-block;
 
 
 
+/*Cascading Style sheets & Specificity
+
+Cascading: Multiple Rules can apply to the same Element
 
 
+Specificity: Resolve Conflicts arising from multiple rules
+*Inline Styles
+*#ID selectors
+*.class, :pseudo-class and attribute selectors
+*
+
+Whenever we have a IDs, class selector they have prioritanze 
+rather than any other element
+
+*/
 
 
 
