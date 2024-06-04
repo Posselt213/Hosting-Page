@@ -1,11 +1,26 @@
 
 
 #product-overview{
-    background: url("ragnarok.jpg");
+    background: url("../Images/ragnarok.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;
+    margin-top: 30px;
+    position: relative;
+    
 }
+
+#product-overview h1{ /*Id selector(section tag)*/
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 76%;
+    left: 0px;;
+    margin: 20px;
+    padding: 6px; 
+   
+}
+
 
 .section-title{  /*Classes Style(h1 tag)*/
     color: #2ddf5c;
@@ -13,10 +28,6 @@
    
 }
 
-#product-overview h1{ /*Id selector(section tag)*/
-    color: white;
-    font-family: 'Anton', sans-serif;
-}
 
 .plan__list{
     width: 80%;
