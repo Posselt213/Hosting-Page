@@ -1,13 +1,12 @@
 
 
 #product-overview{
-    background: url("../Images/ragnarok.jpg");
+    background: url("../Images/ragnarok.jpg") left 10% top 5%/cover no-repeat border-box;
     width: 100%;
     height: 528px;
     padding: 10px;
     margin-top: 30px;
-    position: relative;
-    
+    position: relative;  
 }
 
 #product-overview h1{ /*Id selector(section tag)*/
@@ -15,9 +14,9 @@
     font-size: 30px;
     position: absolute;
     top: 76%;
-    left: 0px;;
-    margin: 20px;
-    padding: 6px; 
+    left: 20px;;
+    bottom: 0px;
+    
    
 }
 
@@ -120,6 +119,7 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: auto;
+    padding: 20px;
 
 }
 
