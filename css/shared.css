@@ -31,7 +31,6 @@ body{ /* Element*/
     position: fixed;
     top: 0;
     z-index: 2;
-    
 }
 
 .main-header > div{
@@ -40,13 +39,15 @@ body{ /* Element*/
 }
 
 .toggle-button {
-    width: 3rem;
+    display: inline-block;
+    width: 2.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
+    
   }
   
   .toggle-button:focus {
@@ -58,7 +59,7 @@ body{ /* Element*/
     height: 0.2rem;
     background: black;
     display: block;
-    margin: 0.6rem 0;
+    margin: 0.4rem 0;
   }
 
 
@@ -68,22 +69,32 @@ body{ /* Element*/
     text-decoration: none;
     font-weight: bold;
     font-size: 1.25rem;
-    height: 1.25rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img{
-    height: 100%;
+    height: 1.5rem;
 }
-
 
 .main-nav{
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
+   
 }
+
+@media (min-width: 40.8rem){
+    .toggle-button{
+    display: none;
+    }
+    .main-nav{
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+        height: auto;
+    }
+  }
+
 .main-nav__items {
     margin: 0;
     padding: 0;
@@ -161,9 +172,9 @@ border-radius: 8px;
     background-color: black;
     padding: 2rem;
     margin-top: 3rem;
-    position: sticky;
     bottom: 0px;
     z-index: 2;
+    width: 100%;
 }
 
 .main-footer__links{
@@ -177,6 +188,15 @@ border-radius: 8px;
 .main-footer__link{
     display: inline-block;
     margin: 0 1rem;
+}
+
+@media(max-width: 40.8rem){
+    .main-footer__link{
+    display: block; 
+    margin: 1rem 0;
+
+    }
+
 }
 
 .main-footer__link a{
