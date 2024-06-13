@@ -4,7 +4,7 @@
     background: url("../Images/ragnarok.jpg") center/cover no-repeat border-box;
     width: 100vw;
     height: 33vh;
-    margin-top: 2.75rem;
+   
     position: relative;  
 }
 
@@ -18,7 +18,7 @@ color: white;
 
 }
 
-@media (min-width: 40.8rem) {
+@media (min-width: 40.8rem) and (min-height: 40.8rem) {
     #product-overview{
         height: 40vh;
         background-position: 50% 15%;

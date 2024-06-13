@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
 
 * {
     box-sizing: border-box;/*Universal */
@@ -10,6 +19,11 @@ body{ /* Element*/
     margin: 0;
     overflow-x: hidden;
     
+}
+
+main{
+    min-height: calc(100vh - 3.5rem - .8rem);
+    margin-top: 3.5rem;
 }
 
 .backdrop{
@@ -27,7 +41,7 @@ body{ /* Element*/
 .main-header{
     width: 100%;
     background: #2ddf5c;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -68,13 +82,13 @@ body{ /* Element*/
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.25rem;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img{
-    height: 1.5rem;
+    height: 100%;
 }
 
 .main-nav{
@@ -227,6 +241,13 @@ color: #023710;
 
 .button:focus{
     outline: none;
+}
+
+.button[disabled]{
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
 }
 
 
