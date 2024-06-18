@@ -62,6 +62,9 @@ color: #979797;
     font-size: 1.25rem;
     color: #0e4f1f;
     background: white;
+    text-shadow: 0px 2px 15px rgba(154, 158, 155, 0.95);
+    /* font: */
+    /* font-style font-variant font-weight font-size/line-height font-familiy */
 }
 
 .clearfix{

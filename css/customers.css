@@ -70,26 +70,24 @@ main{
     .testimonial {
       margin: 3rem auto;
       max-width: 1500px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
-    .testimonial__list {
-    width: 80%;
-    margin: auto;
-  }
+   
   .testimonial__image-container{
     
     width: 65%;
     max-width: 40.8rem;
-    display: inline-block;
-    vertical-align: middle;
-  
   }  
   .testimonial__info {
-    text-align: right;
-    display: inline-block;
-    vertical-align: middle;
     width: 30%;
   }
 
+  .testimonial__list {
+    width: 80%;
+    margin: auto;
+  }
 
 
   }
